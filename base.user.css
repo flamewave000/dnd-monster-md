@@ -6,9 +6,9 @@
 /*                                                                    */
 /**********************************************************************/
 /* Attributes */
-blockquote blockquote ol li:nth-child(1)::before {content: "Armour Class ";}
-blockquote blockquote ol li:nth-child(2)::before {content: "Hit Points ";}
-blockquote blockquote ol li:nth-child(3)::before {content: "Speed ";}
+blockquote blockquote ol li:nth-child(1)::before {content: "Armour Class";}
+blockquote blockquote ol li:nth-child(2)::before {content: "Hit Points";}
+blockquote blockquote ol li:nth-child(3)::before {content: "Speed";}
 /* Stats */
 blockquote blockquote table td:nth-child(1)::before {content: "STR";}
 blockquote blockquote table td:nth-child(2)::before {content: "DEX";}
@@ -17,12 +17,12 @@ blockquote blockquote table td:nth-child(4)::before {content: "INT";}
 blockquote blockquote table td:nth-child(5)::before {content: "WIS";}
 blockquote blockquote table td:nth-child(6)::before {content: "CHA";}
 /* Properties */
-blockquote blockquote ul li:nth-child(1)::before {content: "Skills ";}
-blockquote blockquote ul li:nth-child(2)::before {content: "Damage Vulnerabilities ";}
-blockquote blockquote ul li:nth-child(3)::before {content: "Damage Immunities ";}
-blockquote blockquote ul li:nth-child(4)::before {content: "Senses ";}
-blockquote blockquote ul li:nth-child(5)::before {content: "Languages ";}
-blockquote blockquote ul li:nth-child(6)::before {content: "Challenge ";}
+blockquote blockquote ul li:nth-child(1)::before {content: "Skills";}
+blockquote blockquote ul li:nth-child(2)::before {content: "Damage Vulnerabilities";}
+blockquote blockquote ul li:nth-child(3)::before {content: "Damage Immunities";}
+blockquote blockquote ul li:nth-child(4)::before {content: "Senses";}
+blockquote blockquote ul li:nth-child(5)::before {content: "Languages";}
+blockquote blockquote ul li:nth-child(6)::before {content: "Challenge";}
 
 @font-face /* latin-ext */{font-family: 'Libre Baskerville';font-style: normal;font-weight: 700;
 src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(https://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY5KcCsww.woff2) format('woff2');
@@ -74,8 +74,8 @@ blockquote strong {
   color: black;
 }
 blockquote h1,
-h2,
-h3 {
+blockquote h2,
+blockquote h3 {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -153,6 +153,7 @@ blockquote blockquote ul li::before {
   font-weight: bold;
   margin: 0;
   padding: 0;
+  margin-right: 0.5em;
 }
 blockquote blockquote ul li p {display: inline;}
 blockquote hr {
@@ -173,5 +174,6 @@ blockquote blockquote ol li::before {
   font-weight: bold;
   margin: 0;
   padding: 0;
+  margin-right: 0.5em;
 }
 blockquote blockquote ol li p {display: inline;}
