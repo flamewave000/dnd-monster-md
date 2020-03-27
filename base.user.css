@@ -1,4 +1,3 @@
-
 /**********************************************************************/
 /*                                                                    */
 /*                           D&D Stat Block                           */
@@ -16,13 +15,6 @@ blockquote blockquote table td:nth-child(3)::before {content: "CON";}
 blockquote blockquote table td:nth-child(4)::before {content: "INT";}
 blockquote blockquote table td:nth-child(5)::before {content: "WIS";}
 blockquote blockquote table td:nth-child(6)::before {content: "CHA";}
-/* Properties */
-blockquote blockquote ul li:nth-child(1)::before {content: "Skills";}
-blockquote blockquote ul li:nth-child(2)::before {content: "Damage Vulnerabilities";}
-blockquote blockquote ul li:nth-child(3)::before {content: "Damage Immunities";}
-blockquote blockquote ul li:nth-child(4)::before {content: "Senses";}
-blockquote blockquote ul li:nth-child(5)::before {content: "Languages";}
-blockquote blockquote ul li:nth-child(6)::before {content: "Challenge";}
 
 @font-face /* latin-ext */{font-family: 'Libre Baskerville';font-style: normal;font-weight: 700;
 src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(https://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY5KcCsww.woff2) format('woff2');
@@ -70,9 +62,7 @@ blockquote blockquote {
   padding: 0;
   background-color: none;
 }
-blockquote strong {
-  color: black;
-}
+blockquote strong {color: black;}
 blockquote h1,
 blockquote h2,
 blockquote h3 {
@@ -129,9 +119,7 @@ blockquote blockquote table {
   background: none;
   border: none;
 }
-blockquote blockquote th {
-  display: none;
-}
+blockquote blockquote th {display: none;}
 blockquote blockquote table td {
   color: #922610;
   text-align: center;
@@ -156,6 +144,7 @@ blockquote blockquote ul li::before {
   margin-right: 0.5em;
 }
 blockquote blockquote ul li p {display: inline;}
+blockquote blockquote ul li strong {color:#922610}
 blockquote hr {
   border: none;
   height: 5px;
@@ -177,3 +166,4 @@ blockquote blockquote ol li::before {
   margin-right: 0.5em;
 }
 blockquote blockquote ol li p {display: inline;}
+blockquote a {color: #e47900;}

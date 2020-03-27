@@ -18,38 +18,27 @@ Below is an example of a monster stat block:
 
 ```markdown
 > # John Doe
->
 > ### Medium drow, lawful evil
->
 > ---
->
 > > 1. 16 (natural armour)
 > > 1. 85 (10d8 + 40)
 > > 1. 45ft.
->
 > ---
->
-> > |||||||
-> > | ------------ | ---- | ---- | ---- | ---- | ---- |
-> > |12 (+1)|18 (+4)|18 (+4)|14 (+2)|16 (+3)|20 (+5)|
->
+> > |         |         |         |         |         |         |
+> > | ------- | ------- | ------- | ------- | ------- | ------- |
+> > | 12 (+1) | 18 (+4) | 18 (+4) | 14 (+2) | 16 (+3) | 20 (+5) |
 > ---
->
-> > - Deception +9, Insight +7
-> > - piercing from magic weapons wielded by good creatures
-> > - bludgeoning, piercing, and slashing from nonmagical weapons
-> > - darkvision 60ft., passive Perception 13
-> > - Common, Deep Speech, Dwarvish, Elvish, Infernal, Undercommon
-> > - 10 (— XP)
->
+> > - **Skills** Deception +9, Insight +7
+> > - **Damage Vulnerabilities** piercing from magic weapons wielded by good creatures
+> > - **Damage Immunities** bludgeoning, piercing, and slashing from nonmagical weapons
+> > - **Senses** darkvision 60ft., passive Perception 13
+> > - **Languages** Common, Deep Speech, Dwarvish, Elvish, Infernal, Undercommon
+> > - **Challenge** 10 (— XP)
 > ---
->
 > **Limited Magic Immunity.** Immune to spells of 5th level or lower unless he wishes to be affected. He has advantage on saving throws against all other magical effects.
 >
 > ## Actions
->
 > **Multiattack.** The rakshasa makes two claw attacks.
->
 ```
 
 Which will produce the following within Typora
@@ -63,7 +52,7 @@ Which will produce the following within Typora
 |Stat Block Separators|Horizontal Rule: `---`|
 |Monster Attributes (armour. HP, etc)|Ordered List within a Blockquote:<br />`> 1. <armour class>`<br />`> 1. <hit points>`<br />`> 1. <speed>`<br />These rows will automatically have the "Armour Class", "Hit Points", "Speed" titles added to each row in that order.|
 |Monster Stats|6 column Table within a Blockquote:<br />`> |||||||`<br />`> |-|-|-|-|-|-|`<br />`> |<str>|<dex>|<con>|<int>|<wis>|<cha>|`|
-|Monster Properties|6 row Unordered List within a Blockquote: `> - content`<br />These rows will automatically be prefixed by a specific category, such as 'skill' or 'languages'.|
+|Monster Properties|6 row Unordered List within a Blockquote: `> - content`<br />These rows will automatically be coloured the expected dark red.|
 |Monster Info|This section is just regular Mark Down, nothing special|
 |Monster Info Headers|In this example, I have a header for "Actions"<br />Header 2: `##`|
 
@@ -83,13 +72,6 @@ blockquote blockquote table td:nth-child(3)::before {content: "CON";}
 blockquote blockquote table td:nth-child(4)::before {content: "INT";}
 blockquote blockquote table td:nth-child(5)::before {content: "WIS";}
 blockquote blockquote table td:nth-child(6)::before {content: "CHA";}
-/* Properties */
-blockquote blockquote ul li:nth-child(1)::before {content: "Skills";}
-blockquote blockquote ul li:nth-child(2)::before {content: "Damage Vulnerabilities ";}
-blockquote blockquote ul li:nth-child(3)::before {content: "Damage Immunities";}
-blockquote blockquote ul li:nth-child(4)::before {content: "Senses";}
-blockquote blockquote ul li:nth-child(5)::before {content: "Languages";}
-blockquote blockquote ul li:nth-child(6)::before {content: "Challenge";}
 ```
 
 You will notice that the `nth-child(#)` portion defines the ordering of the rows, and the content within the quotes (`"text to show "`) is what will be displayed. You can change this to any text you want.
