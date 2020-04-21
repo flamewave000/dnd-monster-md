@@ -148,7 +148,8 @@ blockquote blockquote ul li strong {color:#922610}
 blockquote hr {
   border: none;
   height: 5px;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPjxwYXRoIGQ9J00wIDAgTDUgMS4yNSBWMy43NSBMMCA1IFonIHN0cm9rZS13aWR0aD0nMCcgZmlsbD0nIzkyMjYxMCcvPjwvc3ZnPg");
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPjxwYXRoIGQ9J00wIDAgTDUgMS43NSBWMy4yNSBMMCA1IFonIHN0cm9rZS13aWR0aD0nMCcgZmlsbD0nIzkyMjYxMCcvPjwvc3ZnPg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
